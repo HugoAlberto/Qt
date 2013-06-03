@@ -27,8 +27,8 @@ MainWindow::MainWindow(QWidget *parent) :
     //Connexion à la base
     baseCommerciale=QSqlDatabase::addDatabase("QMYSQL");
     baseCommerciale.setHostName("localhost");
-    baseCommerciale.setUserName("root");
-    baseCommerciale.setPassword("root");
+    baseCommerciale.setUserName("-----");
+    baseCommerciale.setPassword("----------");
     baseCommerciale.setDatabaseName("db_reparation");
     if(!baseCommerciale.open())
     {
